@@ -175,7 +175,7 @@ class Terraform(object):
         options['backend_config'] = backend_config
         options['reconfigure'] = reconfigure
         options['backend'] = backend
-        options = self._generate_default_options(options)
+#        options = self._generate_default_options(options)
         args = self._generate_default_args(dir_or_plan)
         return self.cmd('init', *args, **options)
 
